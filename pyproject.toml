@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pygmh-dicom"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+repository = "https://github.com/FintelmannLabDevelopmentTeam/pygmh-dicom/"
+
+[tool.poetry.dependencies]
+pydicom = "^1.3"
+pygmh = { git = "https://github.com/FintelmannLabDevelopmentTeam/pygmh.git", branch = "master" }
+python = "^3.7"
+numpy = "^1.18"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.1"
+
+[tool.poetry.urls]
+issues = "https://github.com/FintelmannLabDevelopmentTeam/pygmh-dicom/issues"

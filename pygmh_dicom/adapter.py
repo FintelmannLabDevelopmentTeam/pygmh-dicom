@@ -7,7 +7,7 @@ from typing import List, Dict, Optional, Tuple, Set
 import numpy as np
 import pydicom
 
-from pygmh.model import MetaData, Image, Vector3, ImageSegmentation
+from pygmh.model import MetaData, Image, Vector3
 from pygmh.persistence.interface import IAdapter
 
 
@@ -97,13 +97,7 @@ class Adapter(IAdapter):
 
         return images
 
-    def read_segmentation(self, image: Image, path: str, identifier: str) -> ImageSegmentation:
-        raise NotImplementedError()
-
     def write(self, image: Image, path: str) -> None:
-        raise NotImplementedError()
-
-    def write_segmentation(self, image_segmentation: ImageSegmentation, path: str) -> None:
         raise NotImplementedError()
 
     def discover_series(self, path: str) -> Set[str]:

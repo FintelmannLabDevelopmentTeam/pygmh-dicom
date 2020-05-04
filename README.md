@@ -15,12 +15,12 @@
     $ poetry shell
     Spawning shell within /home/*user*/.cache/pypoetry/virtualenvs/pygmh-dicom-zeOtsN75-py3.7
     . /home/*user*/.cache/pypoetry/virtualenvs/pygmh-dicom-zeOtsN75-py3.7/bin/activate
-    (pygmh-zeOtsN75-py3.7) $
+    (pygmh-dicom-zeOtsN75-py3.7) $
     ```
 
 3. Run tests:
 
     ```bash
-    (pygmh-zeOtsN75-py3.7) $ pytest
+    (pygmh-dicom-zeOtsN75-py3.7) $ pytest
     ...
     ```

@@ -77,7 +77,7 @@ class Adapter(IAdapter):
             volume = self._build_volume(slices)
             image_meta_data, slice_meta_data_by_index = self._get_meta_data(slices)
 
-            image = Image(volume)
+            image = Image(image_data=volume)
             image.get_meta_data().update({
                 DICOM_META_DATA_KEY: image_meta_data
             })

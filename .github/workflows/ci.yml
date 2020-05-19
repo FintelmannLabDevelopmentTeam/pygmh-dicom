@@ -19,4 +19,4 @@ jobs:
       with:
         python_version: ${{ matrix.python_version }}
         poetry_version: 1.0.5
-        args: run python -m pytest pygmh_test/
+        args: run python -m pytest pygmh_dicom_test/

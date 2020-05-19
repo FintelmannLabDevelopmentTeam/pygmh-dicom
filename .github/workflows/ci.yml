@@ -7,9 +7,6 @@ jobs:
       matrix:
         python_version: [3.6, 3.7, 3.8]
     steps:
-    - uses: fusion-engineering/setup-git-credentials@v2
-      with:
-        credentials: ${{secrets.GIT_CREDENTIALS}}
     - uses: actions/checkout@master
     - name: Install dependencies
       uses: abatilo/actions-poetry@master
